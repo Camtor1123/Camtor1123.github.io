@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ .container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="Books1.jpg" alt="Books" style="width:100%;">
+    <img src="meandcat.jpg" alt="Mecat" style="width:100%;">
+    <div class="text-block">
+      <h4>Héctor del Castillo Gordillo </h4>
+         <p>Ph.D. in Mathematics, Université Paris-Saclay and Pontificia Universidad Católica de Valparaíso</p>
+        </div>
+      </div>
+
+
+
+<h1>My First CSS Example</h1>
+<p>I am FONDECYT 2022 postdoctoral fellow at the Universidad de Santiago de Chile.
+    I have completed my Ph.D.  under the supervision of Luis Lomelí and Guy Henniart (Chile-France Cotutelle). My main research focus is the Langlands program. My Ph. D. thesis establishes a special case of Langlands functionality conjecture for globally generic automorphic representations in positive characteristic. 
+    Apart from my research interests,  I also enjoy learning different aspects of algebraic geometry. 
+    Finally, my interests outside of mathematics are cooking, coffee & tea, health and philosophy.</p>
+
+
+
+
+<h2>Preprint:</h2>
+
+<h2>Research activities:</h2>
+<h2>Recorded Talks:</h2>
+<h2>Recorded Talks: </h2>
+</body>
+</html>
+
