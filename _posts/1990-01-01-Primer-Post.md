@@ -1,5 +1,5 @@
 ---
-title: "YOUR-TITLE"
-date: YYYY-MM-DD
+title: "HOLA"
+date: 1900-01-10
 ---
 Primer Post
