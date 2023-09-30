@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Héctor del Castillo Gordillo</title>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,22 +21,52 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       min-height: 100%;
     }
 
+
+
+
 .container {
   position: relative;
 }
+.sub {
+  position: absolute;
+  
+}
 .image-block{
   position: absolute;
-  top: 20px;
+  top: 65px;
   left: 15%;
 
 }
+
+.image-block-small{
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 200px;
+  left: 35%;
+  
+
+}
+
 .text-block {
   position: absolute;
   bottom: 20px;
   right: 20px;
 
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px black;
   width: 50%;
+}
+
+
+.text-block-small {
+  position: absolute;
+  bottom: 100px;
+  right: 40px;
+
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px black;
+  width: 80%;
 }
 .text-body {
   padding: 50px 20% 20% 20%;
@@ -51,22 +83,79 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 }
 
+
+#navbar {
+  background-color:rgba(255, 255, 255, 0);
+  position: fixed;
+  height:45px;
+  width: 100%;
+  display: block;
+  top: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 </style>
 </head>
 
 
 
-
-
-<div class="container w3-container">
-    <img src=".\photos\LanglandsLetter.png"   alt="Books" style="width:2000px; height:250px;">
-    <div class="text-block w3-container w3-auto">
-      <h1>Héctor del Castillo Gordillo </h1>
+  
+<div class="container">
+  <body>
+    
+    <img src=".\photos\Banner.jpg"  alt="Books" class="responsive w3-hide-small w3-hide-medium" >
+    <img src=".\photos\BannerChico.jpg"  class="w3-hide-large" width=1000px height="100%" alt="Books" >
+    <div class="text-block w3-container w3-auto w3-hide-small w3-hide-medium">
+      <h1><b>Héctor del Castillo Gordillo </b> </h1>
          <p>Ph.D. in Mathematics, Université Paris-Saclay and Pontificia Universidad Católica de Valparaíso</p>
         </div>
-    <div class="image-block w3-image"> <img src=".\photos\Me.jpg" alt="Books" style="width:15%"> </div>
-
+        <div class="text-block-small w3-container w3-auto w3-hide-large">
+          <h1><b>Héctor del Castillo Gordillo </b> </h1>
+             <p>Ph.D. in Mathematics, Université Paris-Saclay and Pontificia Universidad Católica de Valparaíso</p>
+            </div>
+    <div class="image-block w3-image w3-hide-small w3-hide-medium"> <img src=".\photos\Me.jpg" alt="Books"  width=20%> </div>
+    <div class="image-block-small w3-image w3-hide-large"> <img src=".\photos\Me.jpg" alt="Books"   width=50%> </div>
+<div id="navbar" class="sub">
+      <a>Héctor del Castillo Gordillo</a>
+      <a href="#news" style="float:right">Blog</a>
+      <a href="#contact" style="float:right">Notes</a>
+   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -110,6 +199,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <p><a href="https://drive.google.com/file/d/1LRuZibv3MjevUYUrIMbJa3VuKzJNRT_T/view?usp=sharing"class="text-enlaces">Short CV.</a></p>
 <p><a href="http://matematicas.unex.es/~navarro/res/"class="text-enlaces">Grothendieck en Español.</a></p>
 <p><a href="https://www.franceculture.fr/savoirs"class="text-enlaces">France Culture.</a></p>
+
+
+
+
+
+
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0"; document.getElementById("navbar").style.background = "#333";  
+    } else {
+      document.getElementById("navbar").style.top = "0"; 
+    }
+  }
+  </script>
+
+
 </body>
 </html>
 
