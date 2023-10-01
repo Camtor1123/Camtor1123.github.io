@@ -20,12 +20,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 
 
+
 .container {
   position: relative;
-  width: 100vw;
-  height: 70vh;
   overflow: hidden;
 }
+
 .sub {
   position: absolute;
   
@@ -39,14 +39,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 .image-block-small{
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 35%;
 
 }
 
 .text-block {
   position: absolute;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   color: rgb(255, 255, 255);
   text-shadow: 2px 1px black;
@@ -56,7 +56,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 .text-block-small {
   position: absolute;
-  bottom: 250px;
+  bottom: 40px;
   right: 40px;
   color: rgb(255, 255, 255);
   text-shadow: 2px 1px black; 
@@ -114,6 +114,15 @@ background-color: #33333300;
 
 
 
+
+@media  (max-width: 50vw) {
+.container {
+  position: relative;
+  width: 100vw;
+  height:30vw;
+  overflow: hidden;
+}
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -121,7 +130,6 @@ background-color: #33333300;
     display: block;
     
   }
-
   
 }
 
@@ -138,6 +146,7 @@ background-color: #33333300;
     text-align: left;
   }
   
+  
 }
 
 .responsive {
@@ -146,21 +155,16 @@ background-color: #33333300;
 }
 
 
-
-.bannerchico{
-  max-width:1000px
-}
-
 </style>
 </head>
+<body>
 
-
-
+    
   
-<div class="container">
-  <body>
-    <img src=".\photos\Banner.JPG"  alt="Books" class="responsive w3-hide-small w3-hide-medium" >
-    <img src=".\photos\BannerChico.JPG"  class="w3-hide-large bannerchico"   alt="Books" >
+  
+  <div class="container">
+    <img src=".\photos\Banner.JPG"  alt="Books"   class="responsive w3-hide-small w3-hide-medium" >
+    <img src=".\photos\BannerChico.JPG"  class="w3-hide-large" width="1000px"  alt="Books" >
     <div class="text-block w3-container w3-auto w3-hide-small w3-hide-medium">
       <h1><b>Héctor del Castillo Gordillo </b> </h1>
          <p>Ph.D. in Mathematics, Université Paris-Saclay and Pontificia Universidad Católica de Valparaíso</p>
@@ -180,6 +184,7 @@ background-color: #33333300;
       </a>
    </div>
 </div>
+
 
 
 
