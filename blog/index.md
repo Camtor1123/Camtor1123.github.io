@@ -2,11 +2,7 @@
 title: Bienvenido a mi Blog
 ---
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
 
 
   {% if site.paginate %}
