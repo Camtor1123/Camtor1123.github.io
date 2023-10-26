@@ -1,5 +1,6 @@
 theme: minima
 author: Héctor del Castillo
+source: ./blog
 description: Lata de Leche Condensada
 permalink: blog/:categories/:year/:month/:day/:title.html
-destination: /github/workspace/./blog/_site
+destination: ./blog/_site
