@@ -1,5 +1,5 @@
 ---
-title: Categoric Santiago
+title: Noncommutative Santiago
 date: 2023-10-26
 ---
 In construction... 
