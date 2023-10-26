@@ -1,3 +1,4 @@
 theme: minima
 author: Héctor del Castillo
 description: Lata de Leche Condensada
+permalink: /:categories/:year/:month/:day/:title.html
