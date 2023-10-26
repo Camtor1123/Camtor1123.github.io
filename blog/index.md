@@ -1,12 +1,10 @@
 ---
 title: Bienvenido a mi Blog
 ---
-Post
+<h1>Post</h1>
 <ul>
   {% for post in site.posts %}
-    <li>
-      {{ post.date }}
+      {{ post.date | date: "%-d %B %Y"}}<br>
       <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
   {% endfor %}
 </ul>
