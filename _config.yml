@@ -5,5 +5,5 @@ description: Lata de Leche Condensada
 permalink: blog/:categories/:year/:month/:day/:title.html
 destination: ./blog/_site
 collections:
-  posts1:
+  posts:
     output: true
