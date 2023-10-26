@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<title>Héctor del Castillo Gordillo</title>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 100%;
+    }
+
+
+
+
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.sub {
+  position: absolute;
+  
+}
+.image-block{
+  position: absolute;
+  top: 65px;
+  left: 15%;
+
+}
+
+.image-block-small{
+  position: absolute;
+  bottom: 300px;
+  left: 200px
+}
+
+.text-block {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px black;
+  width: 50%;
+}
+
+
+.text-block-small {
+  position: absolute;
+bottom: 90px;
+  right: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px black; 
+  width: 80vw;
+}
+.text-body {
+  padding: 50px 20% 20% 20%;
+}
+
+
+.image-entretexto {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.text-enlaces{
+  color: #006580;
+
+}
+
+.topnav {
+  position: fixed;
+  height:45px;
+  width: 100%;
+  display: block;
+  top: 0;
+background-color: #33333300;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  height:45px;
+  text-align: center;
+  padding: min(2vw, 15px) ; 
+  text-decoration: none;
+  font-size: min(5vw, 17px);
+}
+
+.topnav a:hover {
+  background-color: #ddd; 
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+
+
+@media  (max-width: 50vw) {
+.container {
+  position: relative;
+  width: 100vw;
+  height:30vw;
+  overflow: hidden;
+}
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+</style>
+</head>
+<body>
+
+    
+  
+  
+  <div class="container">
+    <img src=".\photos\Banner.JPG"  alt="Books"   class="responsive w3-hide-small w3-hide-medium" >
+    <img src=".\photos\BannerChico.JPG"  class="w3-hide-large" width="1000px"  alt="Books" >
+    <div class="text-block w3-container w3-auto w3-hide-small w3-hide-medium">
+      <h1><b>Héctor del Castillo Gordillo </b> </h1>
+         <p>Ph.D. in Mathematics, Université Paris-Saclay and Pontificia Universidad Católica de Valparaíso</p>
+        </div>
+        <div class="text-block-small w3-container w3-auto w3-hide-large">
+          <h1><b>Héctor del Castillo Gordillo </b> </h1>
+             <p>Ph.D. in Mathematics, Université Paris-Saclay and Pontificia Universidad Católica de Valparaíso</p>
+            </div>
+    <div class="image-block w3-image w3-hide-small w3-hide-medium"> <img src=".\photos\Me.jpg" alt="Books"  width=20%> </div>
+    <div class="image-block-small  w3-hide-large w3-image"> <img src=".\photos\Me.jpg" alt="Books"  width=50%   > </div>
+<div class="topnav sub" id="myTopnav">
+      <a>Héctor del Castillo Gordillo</a>
+      <a href=".\blog" style="float:right">Blog</a>
+      <a href=".\notas\index.html" style="float:right">Notes</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="text-body">I am FONDECYT 2022 postdoctoral fellow at the Universidad de Santiago de Chile.
+   <p> I have completed my Ph.D.  under the supervision of Luis Lomelí and Guy Henniart (Chile-France Cotutelle). My main research focus is the Langlands program. My Ph. D. thesis establishes a special case of Langlands functionality conjecture for globally generic automorphic representations in positive characteristic. 
+    <p>  Apart from my research interests,  I also enjoy learning different aspects of algebraic geometry. 
+      <p>  Finally, my interests outside of mathematics are cooking, coffee & tea, health and philosophy.</p>
+
+      
+      
+      
+      <div class="image-entretexto"><img src=".\photos\GrothendieckBanner.png"  style="width:100%;"></div>
+
+<h3>Preprint:</h3>
+<a href="https://arxiv.org/abs/2201.03119"class="text-enlaces">Langlands functoriality conjecture for SO*(2n) in positive characteristic. preprint (2022)</a>
+<a href="https://tel.archives-ouvertes.fr/tel-03350460"class="text-enlaces"><p>Thesis (2021)</p></a>
+
+
+
+<h3 style="padding-top: 20px;">Research activities:</h3>
+<a href="https://sites.google.com/view/pucvjornada/2023"class="text-enlaces"><p>Jornada de Aritmética y Geometría en Valparaíso (2023 October)</a></a> Organized with Luis Lomelí.
+<a href="https://sites.google.com/view/danielbarrerasalazar/seminario-automorfo"class="text-enlaces"><p>Seminario Automorfo (2023 October-2024 January)</a></a> Organized with Daniel Barrera and Sebastián Herrero.
+<a href="https://sites.google.com/view/encuentropucv-usach/"class="text-enlaces"><p>Representaciones y Teoría de números: PUCV-USACh (2023 June)</a></a> Organized with Luis Lomelí.
+<a href="https://sites.google.com/view/grp2023/Grp2023-1"class="text-enlaces"><p>Grupo de estudio (2023 March-April)</a>.  Organized with Luis Lomelí and Javier Navarro.
+<a href="https://sites.google.com/view/danielbarrerasalazar/jornada-automorfa"class="text-enlaces"><p>Jornada Automorfa (2023 January).</a> Organized with Daniel Barrera.
+<a href="https://sites.google.com/view/danielbarrerasalazar/a-short-introduction-to-the-ggp-conjectures"class="text-enlaces"><p>A short introduction to the GGP conjectures (2023 January),by Xenia Dimitrakopoulou</a>. Organized with Daniel Barrera.
+<a href="https://sites.google.com/view/danielbarrerasalazar/funtorialidad-y-deformaci%C3%B3n-p-%C3%A1dica"class="text-enlaces"><p>Seminario  Funtorialidad de Langlands y variación p-ádica (2022 March- 2023 January)</a>. Organized with Daniel Barrera and Luis Santiago Palacios.
+<a href="https://sites.google.com/view/danielbarrerasalazar/an-introduction-to-proof-assistants" class="text-enlaces"><p>An introduction to Proof Assistants (2022 November) by Riccardo Brasca</a>. Organized with Daniel Barrera.
+
+<h3 style="padding-top: 20px;">Recorded Talks:</h3>
+
+<a href="https://sites.google.com/view/danielbarrerasalazar/funtorialidad-y-deformaci%C3%B3n-p-%C3%A1dica"class="text-enlaces"><p>Funtorialidad de Langlands  y deformación p-ádica</a> (2022, ten talks ,~2 hours, Castellano).
+<a href="https://youtu.be/iezT6b6mkEU?t=7192"class="text-enlaces"><p>I Encuentro de Estudiantes de Doctorado Chile-Francia de la Universidad de Chile</a> (11/2021, ~15 Minutes, Castellano, Público General).
+<a href="https://youtu.be/a4Sk16HEhkM"class="text-enlaces"><p>Generic Langlands Functoriality Conjecture for SO*(2n) in positive characteristic</a> (11/2021, ~1 hour,  English).
+<a href="https://sites.google.com/view/danielbarrerasalazar/math/seminario-ravs"class="text-enlaces"><p>Representaciones automorfas y Variedades de Shimura</a> (10/2021, seven sessions,~1.5 hours, Castellano).
+<a href="https://youtu.be/-WzYEMDJNUI"class="text-enlaces"><p>Mathematical Congress of the Americas 2021</a>. Poster presentation at the special session “Galois representations and automorphic forms” (6/2021, ~17 minutes, English).
+<a href="http://www.cmat.edu.uy/~tornaria/LATeN/2020/LATeN-2020_10_15-del-Castillo.mp4"class="text-enlaces"><p>Seminario Latinoamericano de Teoría de Números</a> (LATeN) (10/2020, ~1 hour, Castellano).
+<a href="https://youtu.be/J2vpqhROizI"class="text-enlaces"><p>V-Coloquio Valparaíso</a> (7/2020, ~20 minutes, Castellano).</p>
+
+<div class="image-entretexto"><img src=".\photos\LanglandsLetter.png" style="width:100%;"></div>
+<h3>Links: </h3>
+<p><a href="https://drive.google.com/file/d/1LRuZibv3MjevUYUrIMbJa3VuKzJNRT_T/view?usp=sharing"class="text-enlaces">Short CV.</a></p>
+<p><a href="http://matematicas.unex.es/~navarro/res/"class="text-enlaces">Grothendieck en Español.</a></p>
+<p><a href="https://www.franceculture.fr/savoirs"class="text-enlaces">France Culture.</a></p>
+
+
+
+
+
+
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
+      document.getElementById("myTopnav").style.top = "0";  document.getElementById("myTopnav").style.background = "#333";
+    } else {
+      document.getElementById("myTopnav").style.top = "0";  document.getElementById("myTopnav").style.background = "#33333300";
+    }
+  }
+
+
+
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+  </script>
+
+
+</body>
+</html>
+
