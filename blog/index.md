@@ -1,10 +1,11 @@
 ---
 title: Bienvenido a mi Blog
 ---
-Contenido
+Post
 <ul>
   {% for post in site.posts %}
     <li>
+      {{ post.date }}
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
