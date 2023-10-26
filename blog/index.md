@@ -1,5 +1,5 @@
 ---
 title: Bienvenido a mi Blog
-permalink: /blog
+permalink: blog
 ---
 Contenido
