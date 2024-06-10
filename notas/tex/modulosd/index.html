@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+  MathJax = { 
+    tex: {
+		    inlineMath: [['\\(','\\)']]
+	} }
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<meta name="generator" content="plasTeX" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles/theme-notas.css" />
+<link rel="stylesheet" href="styles/amsthm.css" />
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="content">
+<div class="content-wrapper">
+
+
+<div class="main-text">
+<p>El objetivo de estos apuntes presentar un avatar de curvas elípticas y sus moduli en el caso de cuerpos de funciones, i.e., extensión finitas separables de anillo polinomios con coeficiente en un cuerpo finito de \(q\) elementos, \(\mathbb F_q\). </p>
+<h1 id="a0000000002">1 Recuerdo: formas modulares y curvas modular</h1>
+<p>La teoría de formas modulares se puede expresar en términos geométricos de la siguiente manera. Sea \(X\) una curva modular compactificada, i.e. compactificación de un moduli de curvas elípticas con estructura de nivel. Tenemos asociada una curva semi-abeliana \(E\) sobre \(X\), extendiendo la curva elíptica universal del problema de moduli. Definimos \(\omega \) por \(e^*\Omega ^1_{E/X}\), donde \(e\) la sección de \(E\) sobre \(X\). Estos son los ingredientes básicos para describir formas modulares en términos geométrico. </p>
+<div class="centered"> <table class="tabular">
+  <tr>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(\omega \) </p>
+
+    </td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> \(H^0(X,\omega )\) </p>
+
+    </td>
+    <td  style="text-align:center" 
+        rowspan=""
+        colspan="">
+      <p> Formas modulares </p>
+
+    </td>
+  </tr>
+</table> </div>
+<p>Todo lo anterior es trabajando sobre el anillo de los enteros. En toería de números es una buena practica estudiar los fenómenos análogos. Es una practica fructífera buscar objetos análogos a estos y buscar responder preguntas asociada en un contexto. El contexto que nos situaremos será en de cuerpos de funciones, que discutiremos en la siguiente sección. </p>
+<h1 id="a0000000003">2 Cuerpos de funciones</h1>
+<p> Un cuerpos de funciones es una extensión de cuerpos finita separable de \(\mathbb F_q(T)\). Como en el caso de cuerpo de números, cada extensión tiene un anillo enteros. Estos anillos tiene propiedades similares a los anillo de enteros de cuerpo de números, por ejemplo, son de dimensión \(1\), normal, etc... Es bueno siempre tener en mente el cuerpo \(\mathbb F_q(T)\) y su anillo de enteros \(\mathbb F_q[T]\). Una particular del cuerpo de funcione es que se pueden interpretar como el cuerpo de funciones de una curva algebraica propia, por ejemplo, \(\mathbb F_q(T)\) es el cuerpo de funciones de \(\mathbb {P}^1_{\mathbb F_q}\). Más aún, \(\operatorname {Spec}(\mathbb F_q[T])\) se puede identificar con el abierto \(\mathbb {P}^1_{\mathbb {F}_q}\setminus \{ \infty \} \). </p>
+<h1 id="a0000000004">3 Módulos de Drinfeld</h1>
+<p> Los objectos que jugaran el rol de curvas elípticas en el contexto de cuerpos de funciones son los módulos de Drinfeld de rango dos. Si bien no discutiremos en detalle porque estos objectos son los análogos a las curvas elípticas, esperamos que que las propiedades que expondremos y sus ejemplo tenga sabor a lo que pasa en el contexto de curvas elípticas. </p>
+<p>Comenzamos con una construcción básica. Sea \(S\) un esquema sobre \(\mathbb F_q\). Para todo haz de linea \(\mathcal{L}\) de \(S\), denotamos el morfismo de haz de lineas </p>
+<div class="displaymath" id="a0000000005">
+  \[ \tau \colon \mathcal{L} \to \mathcal{L}^{\otimes q} : (l\mapsto l^{\otimes q}). \]
+</div>
+<p> Este morfismo de \(\mathcal O_S\)-módulos induce un morfismo de \(S\)-esquemas </p>
+<div class="displaymath" id="a0000000006">
+  \[ \tau \colon \mathbb V(\mathcal L^{\vee })\to \mathbb V((\mathcal L^{\otimes q})^\vee ),  \]
+</div>
+<p> donde \(\mathbb V(\mathcal L )=\operatorname {Spec}(\operatorname {Sym}(\mathcal{L}))\). Notar el abuso de notación, denotamos el morfismo de \(S\)-esquemas y el de \(\mathcal O_S\)-módulos de la misma manera. </p>
+<p><div class="ejemplo_thmwrapper theorem-style-definition" id="a0000000007">
+  <div class="ejemplo_thmheading">
+    <span class="ejemplo_thmcaption">
+    Ejemplo
+    </span>
+    <span class="ejemplo_thmlabel">3.1</span>
+  </div>
+  <div class="ejemplo_thmcontent">
+  <p>Consideremos el caso \(S=\operatorname {Spec}(R)\) y \(\mathcal{L}=\mathcal{O}_S\). Entonces \(\mathbb V(\mathcal O_S^\vee )=\mathbb A_S^1=\operatorname {Spec}(R[T])\) y el morfismo de \(R\)-algebras asociado a \(\tau \) está dado determinado por </p>
+<div class="displaymath" id="a0000000008">
+  \[ T\mapsto T^p. \]
+</div>
+
+  </div>
+</div> En este apunte nos focalizaremos en definir los módulos de Drinfeld estándar. El autor de este apunte le gusta pensarlos como el análogo de la forma de Weierstrass de la curvas elípticas, en el caso de módulos de Drinfeld. <div class="defi_thmwrapper theorem-style-definition" id="a0000000009">
+  <div class="defi_thmheading">
+    <span class="defi_thmcaption">
+    Definición
+    </span>
+    <span class="defi_thmlabel">3.2</span>
+  </div>
+  <div class="defi_thmcontent">
+  <p>Un \(A\)-modulo de Drinfeld de rango \(2\) sobre \(S\) es un par \((\mathcal L,\varphi )\), donde \(\mathcal{L}\) es un haz de linea de \(S\) y \(\varphi \) es un \(\mathbb F_p\)-homomorfismo \(A\to \operatorname {End}_S(\mathbb {V}(\mathcal{L}^\vee ))\) tal que para todo \(a\in A-\{ 0\} \) </p>
+<div class="displaymath" id="a0000000010">
+  \[ \varphi (a)=\sum _{i=0}^{2\dim _{\mathbb F_p}(A/(a))}\alpha _i(a)\tau ^i  \]
+</div>
+<p> donde \(\alpha _i(a)\in \mathcal{L}^{(1-p^i)}(S)\) y \(\alpha _{2\dim _{\mathbb F_p}(A/(a))}(a)\) nunca se anula en \(S\). </p>
+
+  </div>
+</div> </p>
+<p><div class="ejemplo_thmwrapper theorem-style-definition" id="a0000000011">
+  <div class="ejemplo_thmheading">
+    <span class="ejemplo_thmcaption">
+    Ejemplo
+    </span>
+    <span class="ejemplo_thmlabel">3.3</span>
+  </div>
+  <div class="ejemplo_thmcontent">
+  <p>Consideramos el caso de \(S=\operatorname {Spec}(R)\), \(A=\mathbb F_p[T]\) y \(\mathcal{L}=\mathcal{O}_S\). En este caso dar un morfismo de Drinfeld se reduce a la información dada por </p>
+<div class="displaymath" id="a0000000012">
+  \[ \varphi (T)=\alpha _0(T) +\alpha _1(T)\tau +\alpha _2(T)\tau ^2, \]
+</div>
+<p> donde, para todo \(i\), \(\alpha _i(T)\in R\) y \(\alpha _2(T)\) es invertible. De hecho, calculemos \(\varphi (T^2)\): </p>
+<div class="displaymath" id="a0000000013">
+  \begin{align*}  \varphi (T^2)& = \varphi (T)\cdot \varphi (T)\\ & =(\alpha _0(T) +\alpha _1(T)\tau +\alpha _2(T)\tau ^2)(\alpha _0(T) +\alpha _1(T)\tau +\alpha _2(T)\tau ^2)\\ & =\alpha _0(T)^2 +[\alpha _0(T)\alpha _1(T)+\alpha _0(T)^p\alpha _1(T)]\tau + \\ & [\alpha _0(T)\alpha _2(T)+\alpha _0^{p^2}(T)\alpha _2(T)+a_1(T)a_1(T)^p]\tau ^2+\\ & [\alpha _1(T)\alpha _2(T)^p+\alpha _1(T)^{p^2}\alpha _2(T)]\tau ^3+a_2(T)a_2(T)^{p^4}\tau ^4. \end{align*}
+</div>
+<p> Notamos que \(2\dim A/(T^2)=4\) y que \(a_4(T^2)=a_2(T)a_2(T)^{p^4}\) nunca se anula (\(a_2(T)\) nunca se anula). Queremos resaltar la multiplicación de la expresiones son no conmutativa, esto se puede observar viendo que los coeficientes tiene un termino elevado a la \(p\), por ejemplo \(a_2(T)a_2(T)^{p^4}\tau ^4\), en vez de \(a_2(T)^2\tau ^4\). </p>
+
+  </div>
+</div> </p>
+<p><div class="remark_thmwrapper theorem-style-definition" id="a0000000014">
+  <div class="remark_thmheading">
+    <span class="remark_thmcaption">
+    Observación
+    </span>
+    <span class="remark_thmlabel">3.4</span>
+  </div>
+  <div class="remark_thmcontent">
+  <ul class="itemize">
+  <li><p>El morfismo \((a\mapsto \alpha _0(a))\) define \(\theta _{(\mathcal{L},\varphi )}\colon S\to \operatorname {Spec}(A)\). Llamaremos este morfismo la característica de \((\mathcal{L},\varphi )\). </p>
+</li>
+  <li><p>Observamos también que por definición tenemos que si dotamos a \(V(\mathcal L^\vee )\) con la estructura de grupo natural, entonce \(\varphi (a)\) es un homomorfismo de grupos para todo \(a\in A\). </p>
+</li>
+</ul>
+
+  </div>
+</div> </p>
+<p>Usualmente, para achicar la notación, denotamos por \(E\) al fibrado de líneas \(\mathbb V(\mathcal{L}^\vee )\). Denotamos por \(0\colon S\to \mathbb V(\mathcal{L^\vee })\) la sección trivial de \(\mathbb V(\mathcal L^\vee )\), i.e., el morfismo que corresponde a \(0\in \mathcal{L}^\vee \) usando la propiedad universal: \({\rm Hom}(S,\mathbb V(\mathcal{L}^\vee ))=H^0(S,\mathcal{L}^\vee )\). Ahora, siguiendo la analogía con curvas elípticas definimos. <div class="defi_thmwrapper theorem-style-definition" id="a0000000015">
+  <div class="defi_thmheading">
+    <span class="defi_thmcaption">
+    Definición
+    </span>
+    <span class="defi_thmlabel">3.5</span>
+    <span class="defi_thmtitle">Torsión</span>
+  </div>
+  <div class="defi_thmcontent">
+  <p> Sea \(I\) un ideal no cero de \(A\). La \(I\)-torsión de un modulo de Drinfeld \((\mathcal L,\varphi )\) es </p>
+<div class="displaymath" id="a0000000016">
+  \[ \bigcap _{a\in I} \ker (\varphi (a))\subset \mathbb V(\mathcal{L}^\vee ). \]
+</div>
+<p> La denotaremos por \(\mathbb V(\mathcal{L}^\vee )[I]\). </p>
+
+  </div>
+</div> </p>
+<p><div class="ejemplo_thmwrapper theorem-style-definition" id="a0000000017">
+  <div class="ejemplo_thmheading">
+    <span class="ejemplo_thmcaption">
+    Ejemplo
+    </span>
+    <span class="ejemplo_thmlabel">3.6</span>
+  </div>
+  <div class="ejemplo_thmcontent">
+  <p>Consideramos el caso de \(S=\operatorname {Spec}(R)\), \(A=\mathbb F_p[T]\), \(I=(T)\) y \(\mathcal{L}=\mathcal{O}_S\). </p>
+<div class="displaymath" id="a0000000018">
+  \[ \mathbb V(\mathcal{L}^\vee )[I]=\ker (r\mapsto \alpha _0(T)r +\alpha _1(T)r^p+\alpha _2(T)r^{p^2}). \]
+</div>
+<p> Este ejemplo ilustra que la torsión está contenida en la información de divisores de \(\mathbb V(\mathcal{L}^\vee )\). </p>
+
+  </div>
+</div> </p>
+<h1 id="a0000000019">4 Curva modular de Drinfeld</h1>
+<p> Sea \(I\) un ideal no cero de \(A\). Consideramos el moduli de módulos de Drinfeld estándares, esto es, la categoría fibra por esquemas de grupoide tal que </p>
+<div class="displaymath" id="a0000000020">
+  \[ Y_I(S)=\{ \}  \]
+</div>
+<p><div class="remark_thmwrapper theorem-style-definition" id="a0000000021">
+  <div class="remark_thmheading">
+    <span class="remark_thmcaption">
+    Observación
+    </span>
+    <span class="remark_thmlabel">4.1</span>
+  </div>
+  <div class="remark_thmcontent">
+  <p>Consideramos el caso \(A=\mathbb F_q[T]\) y \(S=\operatorname {Spec}(k)\), donde \(k\) es un \(\mathbb F_q\)-cuerpo. Para un tal \(S\), todos los haces invertibles son triviales. Ahora, dos módulos de Drinfeld \((\mathcal{O}_S,\varphi )\) y \((\mathcal{O}_S,\varphi ')\) si \(\alpha _0(T)=\alpha _0'(T)\) y existe \(t\in k^\times \) tal que \(\alpha _1'(T)=t^{q-1}\alpha _1(T)\) y \(\alpha _2'(T)=t^{q^2-1}\alpha _2(T)\). </p>
+
+  </div>
+</div> </p>
+<p><div class="theorem_thmwrapper theorem-style-plain" id="a0000000022">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Teorema
+    </span>
+    <span class="theorem_thmlabel">4.2</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p>\(Y_I\) es representable por un esquema afín de tipo finito sobre \(\mathbb F_q[T]\). Adémas, el morfismo de esquemas inducido por \((\mathcal{L},\varphi )\mapsto \theta _{(\mathcal L,\varphi )}\), </p>
+<div class="displaymath" id="a0000000023">
+  \[ p_I\colon Y_I \to \operatorname {Spec}(A)-V(I) \]
+</div>
+<p> es suave de dimensión relativa \(1\). </p>
+
+  </div>
+</div> </p>
+<div class="proof_wrapper" id="a0000000024">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">â–¼</span>
+  </div>
+  <div class="proof_content">
+  <p>Veremos el caso \(A=\mathbb F_q[T]\). La información nos fija una triavialización de \(\mathcal{L}\). En el caso de haces invertible, una trivisalizacion se corresponde a un elemento no nulo del haz de linea \(\mathcal{L}.\) En este caso tenemos que la categoría fibrada en grupoides es de hecho fibra en conjuntos. Más aún, vemos que un módulos de Drinfeld \((\mathcal O_S,\varphi )\) esta determinado por \(\varphi (T)\), esto nos d que... </p>
+<p>Finalmente, </p>
+
+  </div>
+</div>
+<p><div class="remark_thmwrapper theorem-style-definition" id="a0000000025">
+  <div class="remark_thmheading">
+    <span class="remark_thmcaption">
+    Observación
+    </span>
+    <span class="remark_thmlabel">4.3</span>
+  </div>
+  <div class="remark_thmcontent">
+  <p>Teorema nos dice que \(Y_A\) es un campo de Deligne-Mumford. Más aún, la observación sugiere que \(Y_A\) es el campo cociente \([\mathbb G_m \backslash \operatorname {Spec}(A)\times \mathbb A^1\times \mathbb G_m]\), donde la acción \(t\cdot (x,a,b)=(x,t^{q-1}a,t^{q^2-1}b)\) y así su campo grueso sería </p>
+<div class="displaymath" id="a0000000026">
+  \[ \operatorname {Spec}(A\otimes \mathbb F_p[X,Y,Y^{-1}]^{\mathbb G_m})=\operatorname {Spec}(A\otimes \mathbb F_p[X^{q+1}/Y])\cong \mathbb A^1_{A}. \]
+</div>
+<p> Como en el caso de curvas élipticas, esta construcción esta asociada a la \(j\)-invariante. </p>
+
+  </div>
+</div> </p>
+<h1 id="a0000000027">Referencias</h1>
+<dl class="bibliography">
+  <dt><a name="BaMo1996">1</a></dt>
+  <dd><p>D. Barbasch and A. Moy, <em>Unitary Spherical Spectrum for \(p\)-Adic Classical Groups</em>, Acta Applicandae Math. <b class="bf">44</b> (1996), 3-37. </p>
+</dd>
+</dl>
+
+</div> <!--main-text -->
+</div> <!-- content-wrapper -->
+</div> <!-- content -->
+</div> <!-- wrapper -->
+
+<nav class="prev_up_next">
+</nav>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/plastex.js"></script>
+<script type="text/javascript" src="js/svgxuse.js"></script>
+</body>
+</html>
