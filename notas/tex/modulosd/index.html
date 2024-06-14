@@ -25,37 +25,184 @@
 
 
 <div class="main-text">
-<p>El objetivo de estos apuntes presentar un avatar de curvas elípticas y sus moduli en el caso de cuerpos de funciones, i.e., extensión finitas separables de anillo polinomios con coeficiente en un cuerpo finito de \(q\) elementos, \(\mathbb F_q\). </p>
-<h1 id="a0000000002">1 Recuerdo: formas modulares y curvas modular</h1>
-<p>La teoría de formas modulares se puede expresar en términos geométricos de la siguiente manera. Sea \(X\) una curva modular compactificada, i.e. compactificación de un moduli de curvas elípticas con estructura de nivel. Tenemos asociada una curva semi-abeliana \(E\) sobre \(X\), extendiendo la curva elíptica universal del problema de moduli. Definimos \(\omega \) por \(e^*\Omega ^1_{E/X}\), donde \(e\) la sección de \(E\) sobre \(X\). Estos son los ingredientes básicos para describir formas modulares en términos geométrico. </p>
+<p>El objetivo de estos apuntes es presentar un avatar de curvas elípticas y sus moduli en el caso de cuerpos de funciones, i.e., extensión finitas separables de anillo polinomios con coeficiente en un cuerpo finito de \(q\) elementos, \(\mathbb F_q\). </p>
+<h1 id="a0000000002">1 Recuerdo: curvas modulares</h1>
+<p> La curvas modulares son la compactificación del moduli de curvas elípticas con estructura de nivel. Tenemos asociada una curva semi-abeliana \(E\) sobre \(X\), extendiendo la curva elíptica universal del problema de moduli original. Esta curva juega un clave en el estudio de las formas modulares. De hecho ellas se pueden expresar en términos geométricos de la siguiente manera. Definimos \(\omega \) por \(e^*\Omega ^1_{E/X}\), donde \(e\) la sección de \(E\) sobre \(X\). </p>
 <div class="centered"> <table class="tabular">
   <tr>
-    <td  style="text-align:center" 
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
         rowspan=""
         colspan="">
-      <p> \(\omega \) </p>
+      <p> Haz de líneas </p>
 
     </td>
-    <td  style="text-align:center" 
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
         rowspan=""
         colspan="">
-      <p> \(H^0(X,\omega )\) </p>
+      <p> Secciónes globales </p>
 
     </td>
-    <td  style="text-align:center" 
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
         rowspan=""
         colspan="">
       <p> Formas modulares </p>
 
     </td>
   </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p>\(\omega \) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> \(H^0(X,\omega )\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> \(H^0(X,\omega )\otimes \mathbb {C}\) </p>
+
+    </td>
+  </tr>
 </table> </div>
-<p>Todo lo anterior es trabajando sobre el anillo de los enteros. En toería de números es una buena practica estudiar los fenómenos análogos. Es una practica fructífera buscar objetos análogos a estos y buscar responder preguntas asociada en un contexto. El contexto que nos situaremos será en de cuerpos de funciones, que discutiremos en la siguiente sección. </p>
+<p>Todo lo anterior es trabajando sobre el anillo de los enteros. En teoría de números es una buena practica estudiar los fenómenos análogos. Es una practica fructífera buscar objetos análogos a estos y buscar responder preguntas similares en esta nueva perspectiva. El contexto que nos situaremos será en de cuerpos de funciones, que discutiremos en la siguiente sección. </p>
 <h1 id="a0000000003">2 Cuerpos de funciones</h1>
-<p> Un cuerpos de funciones es una extensión de cuerpos finita separable de \(\mathbb F_q(T)\). Como en el caso de cuerpo de números, cada extensión tiene un anillo enteros. Estos anillos tiene propiedades similares a los anillo de enteros de cuerpo de números, por ejemplo, son de dimensión \(1\), normal, etc... Es bueno siempre tener en mente el cuerpo \(\mathbb F_q(T)\) y su anillo de enteros \(\mathbb F_q[T]\). Una particular del cuerpo de funcione es que se pueden interpretar como el cuerpo de funciones de una curva algebraica propia, por ejemplo, \(\mathbb F_q(T)\) es el cuerpo de funciones de \(\mathbb {P}^1_{\mathbb F_q}\). Más aún, \(\operatorname {Spec}(\mathbb F_q[T])\) se puede identificar con el abierto \(\mathbb {P}^1_{\mathbb {F}_q}\setminus \{ \infty \} \). </p>
+<p> Un cuerpo de funciones es una extensión de cuerpos finita separable de \(\mathbb F_q(T)\). Como en el caso de cuerpo de números, cada extensión tiene un anillo enteros. Estos anillos tiene propiedades similares a los anillo de enteros de cuerpo de números, por ejemplo, son de dimensión \(1\), normal, etc... Es bueno siempre tener en mente el cuerpo \(\mathbb F_q(T)\) y su anillo de enteros \(\mathbb F_q[T]\). En este caso las analogías son las siguientes </p>
+<div class="centered"> <table class="tabular">
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> Enteros </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> Funciones </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> Geometría</p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p>\(\mathbb {Z}\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\mathbb F_q[T]\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\mathbb A^1_{\mathbb F_q}\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p>número primo \(p\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(T\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> origen </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p>\(\mathbb Q\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p>\(\mathbb F_q(T)\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> punto genérico \(\mathbb {P}^1_{\mathbb {F}_q}\) </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p>\(\mathbb Q_p\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> \(\mathbb F_q((T))\)</p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black" 
+        rowspan=""
+        colspan="">
+      <p> completación en el origen </p>
+
+    </td>
+  </tr>
+  <tr>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p>\(\mathbb R\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> \(\mathbb F_q((T^{-1}))\) </p>
+
+    </td>
+    <td  style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px" 
+        rowspan=""
+        colspan="">
+      <p> completación en \(\infty \)   !! </p>
+
+    </td>
+  </tr>
+</table> </div>
+<p>Una particularidad del cuerpo de funciones es que se pueden interpretar como el cuerpo de funciones de una curva algebraica propia, por ejemplo, \(\mathbb F_q(T)\) es el cuerpo de funciones de \(\mathbb {P}^1_{\mathbb F_q}\). Más aún, \(\operatorname {Spec}(\mathbb F_q[T])\) se puede identificar con el abierto \(\mathbb {P}^1_{\mathbb {F}_q}\setminus \{ \infty \} \). </p>
 <h1 id="a0000000004">3 Módulos de Drinfeld</h1>
-<p> Los objectos que jugaran el rol de curvas elípticas en el contexto de cuerpos de funciones son los módulos de Drinfeld de rango dos. Si bien no discutiremos en detalle porque estos objectos son los análogos a las curvas elípticas, esperamos que que las propiedades que expondremos y sus ejemplo tenga sabor a lo que pasa en el contexto de curvas elípticas. </p>
-<p>Comenzamos con una construcción básica. Sea \(S\) un esquema sobre \(\mathbb F_q\). Para todo haz de linea \(\mathcal{L}\) de \(S\), denotamos el morfismo de haz de lineas </p>
+<p> Los objetos que jugaran el rol de curvas elípticas en el contexto de cuerpos de funciones son los módulos de Drinfeld de rango dos. Si bien no discutiremos en detalle porque estos objectos son los análogos a las curvas elípticas, esperamos que que las propiedades que expondremos y sus ejemplo tenga sabor a lo que pasa en el contexto de curvas elípticas. </p>
+<p>Comenzamos con una construcción básica, seguiremos la definición que aparecen en <span class="cite">
+	[
+	<a href="index.html#Ha2022cpt" >1</a>
+	]
+</span>. Sea \(S\) un esquema sobre \(\mathbb F_q\). Para todo haz de linea \(\mathcal{L}\) de \(S\), denotamos el morfismo de haz de lineas </p>
 <div class="displaymath" id="a0000000005">
   \[ \tau \colon \mathcal{L} \to \mathcal{L}^{\otimes q} : (l\mapsto l^{\otimes q}). \]
 </div>
@@ -112,7 +259,7 @@
 <div class="displaymath" id="a0000000013">
   \begin{align*}  \varphi (T^2)& = \varphi (T)\cdot \varphi (T)\\ & =(\alpha _0(T) +\alpha _1(T)\tau +\alpha _2(T)\tau ^2)(\alpha _0(T) +\alpha _1(T)\tau +\alpha _2(T)\tau ^2)\\ & =\alpha _0(T)^2 +[\alpha _0(T)\alpha _1(T)+\alpha _0(T)^p\alpha _1(T)]\tau + \\ & [\alpha _0(T)\alpha _2(T)+\alpha _0^{p^2}(T)\alpha _2(T)+a_1(T)a_1(T)^p]\tau ^2+\\ & [\alpha _1(T)\alpha _2(T)^p+\alpha _1(T)^{p^2}\alpha _2(T)]\tau ^3+a_2(T)a_2(T)^{p^4}\tau ^4. \end{align*}
 </div>
-<p> Notamos que \(2\dim A/(T^2)=4\) y que \(a_4(T^2)=a_2(T)a_2(T)^{p^4}\) nunca se anula (\(a_2(T)\) nunca se anula). Queremos resaltar la multiplicación de la expresiones son no conmutativa, esto se puede observar viendo que los coeficientes tiene un termino elevado a la \(p\), por ejemplo \(a_2(T)a_2(T)^{p^4}\tau ^4\), en vez de \(a_2(T)^2\tau ^4\). </p>
+<p> Notamos que \(2\dim A/(T^2)=4\) y que \(a_4(T^2)=a_2(T)a_2(T)^{p^4}\) nunca se anula (\(a_2(T)\) nunca se anula). Queremos resaltar la multiplicación de la expresiones son no conmutativa, esto se puede notar viendo que los coeficientes tiene un termino elevado a la \(p\), por ejemplo \(a_2(T)a_2(T)^{p^4}\tau ^4\), en vez de \(a_2(T)^2\tau ^4\). </p>
 
   </div>
 </div>
@@ -127,7 +274,7 @@
   <ul class="itemize">
   <li><p>El morfismo \((a\mapsto \alpha _0(a))\) define \(\theta _{(\mathcal{L},\varphi )}\colon S\to \operatorname {Spec}(A)\). Llamaremos este morfismo la característica de \((\mathcal{L},\varphi )\). </p>
 </li>
-  <li><p>Observamos también que por definición tenemos que si dotamos a \(\mathbb V(\mathcal L^\vee )\) con la estructura de grupo natural, entonce \(\varphi (a)\) es un homomorfismo de grupos para todo \(a\in A\). </p>
+  <li><p>Observamos también que por definición tenemos que, si dotamos a \(\mathbb V(\mathcal L^\vee )\) con la estructura de grupo natural, entonce \(\varphi (a)\) es un homomorfismo de grupos para todo \(a\in A\). </p>
 </li>
 </ul>
 
@@ -197,7 +344,7 @@
     <span class="theorem_thmlabel">4.2</span>
   </div>
   <div class="theorem_thmcontent">
-  <p>\(Y_I\) es representable por un esquema afín de tipo finito sobre \(\mathbb F_q[T]\). Adémas, el morfismo de esquemas inducido por \((\mathcal{L},\varphi )\mapsto \theta _{(\mathcal L,\varphi )}\), </p>
+  <p>Si \(I\neq A\), entonces \(Y_I\) es representable por un esquema afín de tipo finito sobre \(A\). Adémas, el morfismo de esquemas inducido por \((\mathcal{L},\varphi )\mapsto \theta _{(\mathcal L,\varphi )}\), </p>
 <div class="displaymath" id="a0000000023">
   \[ p_I\colon Y_I \to \operatorname {Spec}(A)-V(I) \]
 </div>
@@ -248,6 +395,10 @@
 <p>En este apunte solo vimos los aspectos geométricos algebraicos, para más información sobre su relación con “artimética" consultar el apunte <span class="cite">
 	[
 	<a href="index.html#P" >3</a>
+	]
+</span> y para sus relación con formas modulares de Drinfeld ver <span class="cite">
+	[
+	<a href="index.html#Ha2022cpt" >1</a>
 	]
 </span>. </p>
 <h1 id="a0000000028">Referencias</h1>
