@@ -5,12 +5,8 @@ date: 2023-10-26
 In construction... 
 
 
-<!---Santiago is known for its very high altitude mountains, the Cordillera de los Andes, as well as its smaller but no less important hills, Cerro San Cristobal and Cerro Santa Lucia. From this point, the details leaves the main scene and the  the relationships between the object take the spotlight. Thus, we can interpret this from a categorical point of view of Santiago. In this post, we are going to explore and explain some of these high points with the goal to let the reader get motivated to go there and have the experience of Categorical Santiago.
+<!--- In the historical center of Santiago, there is a mystery. In geographical origin of Santiago (and also the main due to its location relative to the sunsets) there is place where you can find the 0 Km, marking the. This has been the center of Santiago for a long time, but the modernity has brought new perspective to the City. One of the is the main highways of Santiago. Fearsome machines with high speed move people and goods through out the city. The bringer of the modernity with their new ideas, decided to create a new 0Km in Santiago. It is not clear from where these idea came from, but probably it has as its roots the noncommutative geometry. Commutative is maybe something that you has heard in the school, as a property of the numbers, more precisely you heard something along the line of: "the order of the sums does not alter the sum". Arguably, noncommutative is more natural, as many structure in the day to day life are noncommunicative, for examples the word alblabll is different from the one.
 
-Cerro Santa Lucia. Height: This is not a very high hill, but it is at altitude. This was called... (short history about the hills)
 
-One can say that this hill has three levels. It has different levels, but we will concentrate on the highest ones.
+-->
 
-Cerro San Cristobal. This is an iconic hill; it is a park, one of the biggest in Latin America. This park is called Parquemet. It has... (additional details). Of course, due to the great extent of this hill, we are only going to highlight some of its high points. First, maybe the most well-known, the summit. It has a characteristic church, common in Chile, and many...
-
-These are just two categorical views emerging from the hills of Santiago. We encourage the reader to explore these and discover new ones!-->
