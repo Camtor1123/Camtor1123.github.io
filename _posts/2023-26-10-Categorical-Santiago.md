@@ -15,12 +15,8 @@ Of course, there are many places to visit in this hills, so we are only see some
 
 From this side we can see different building such as Iglesia and Museum. Bibloteca Nacional and Iglesia San Francisco. Finally our next destination, cerro San Cristobal.
 
-<span style="display:block;text-align:center">
-<figure>
-<img src="https://hdc-g.github.io/docs/assets/SantaLuciaAlbum.png" width="400">
-  <figcaption>Hola</figcaption>
-</figure>
-</span>
+<span style="display:block;text-align:center"> <figure><img src="https://hdc-g.github.io/docs/assets/SantaLuciaAlbum.png" width="400"> <figcaption>Hola</figcaption></figure></span>
+
 
 Cerro San Cristobal. This is an iconic hill; it is a park with 722 hectares, one of the biggest in the world. This park is called Parquemet. It has Pools, cables cars, funiculars, a Zoo, botanical garden, a sanctuary, astronomical observatory, etc. Of course, due to the great extent of this hill, we are only going to highlight some of its high points. First, maybe the most well-known, the summit. It has a sculture of virgen maria. 
 
