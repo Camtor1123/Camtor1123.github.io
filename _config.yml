@@ -5,9 +5,12 @@ author:
 source: ./blog
 description: >
   Welcome to the blog Lata de Leche Condensada. Here you can expect post about non-mathematical topics, but with a touch of mathematics.
-
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 permalink: blog/:categories/:year/:month/:day/:title.html
 destination: ./blog/_site
 collections:
   posts:
     output: true
+
