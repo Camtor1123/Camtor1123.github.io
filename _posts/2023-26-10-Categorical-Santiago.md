@@ -1,6 +1,6 @@
 ---
 title: Categorical Santiago
-date: 2023-10-26
+date: 2024-10-04
 ---
 
 In construction... 

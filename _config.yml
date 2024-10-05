@@ -1,7 +1,7 @@
 theme: minima
 author: Héctor del Castillo
 source: ./blog
-description: Lata de Leche Condensada
+description: "Welcome to the blog Lata de Leche Condensada. Here you can expect post about non-mathematical topics, but with a touch of mathematics."
 permalink: blog/:categories/:year/:month/:day/:title.html
 destination: ./blog/_site
 collections:
