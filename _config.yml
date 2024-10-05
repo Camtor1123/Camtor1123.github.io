@@ -1,5 +1,7 @@
 theme: minima
-
+author:
+  name: GitHub User
+  email: your-email@domain.com
 source: ./blog
 description: >
   Welcome to the blog Lata de Leche Condensada. Here you can expect post about non-mathematical topics, but with a touch of mathematics.
